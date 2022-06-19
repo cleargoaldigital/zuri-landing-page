@@ -18,9 +18,6 @@
 
 body{
    font-family: 'Open Sans';
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
 }
 
 header{
@@ -32,30 +29,29 @@ header{
    display: flex;
    align-items: center;
    flex-direction: column;
-   width: 100%;
+   padding: auto 25px;
 }
 
 nav{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 100%;
+   /* width: 100%; */
    margin-top: 20px;
-   padding: 10px;
 }
 
 .logo{
    width: 70px;
 }
 
-nav button{
+.navbtn{
    background-color: #fff;
    font-weight: bold;
    font-size: .345em;
    border: none;
    border-radius: 20px;
    padding: 5px 25px;
-   box-shadow: 0.2px .2px .2px .2px rgb(129, 127, 127);
+   box-shadow: 0.2px .2px .2px .2px rgb(173, 172, 172);
 }
 
 .hero-section{
@@ -68,7 +64,7 @@ nav button{
 .left-div, .right-div{
    padding: 10px;
    height: 100%;
-   margin: 3px;
+   margin: 3px auto;
 }
 
 .left-div h4, .left-div p, .left-div button{
@@ -91,7 +87,7 @@ nav button{
    display: block;
  }
 
- @media screen and (max-width: 375px){
+ @media screen and (max-width: 376px){
    header{
       background-image: url('./images/bg-hero-mobile.svg');
    }
