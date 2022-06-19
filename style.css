@@ -16,14 +16,86 @@
    box-sizing: border-box;
 }
 
-html, body{
+body{
    font-family: 'Open Sans';
-   background-image: url(./images/bg-hero-desktop.svg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
 }
 
 header{
+   background-image: url('./images/bg-hero-desktop.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    font-family: Poppins;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
 }
+
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 20px;
+   padding: 10px;
+}
+
+.logo{
+   width: 70px;
+}
+
+nav button{
+   background-color: #fff;
+   font-weight: bold;
+   font-size: .345em;
+   border: none;
+   border-radius: 20px;
+   padding: 5px 25px;
+   box-shadow: 0.2px .2px .2px .2px rgb(129, 127, 127);
+}
+
+.hero-section{
+   margin-top: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.left-div, .right-div{
+   padding: 10px;
+   height: 100%;
+   margin: 3px;
+}
+
+.left-div h4, .left-div p, .left-div button{
+   margin-top: 10px;
+}
+.left-div button{
+   background-color: hsl(322, 100%, 66%);
+   color: #fff;
+   border-radius: 15px;
+   padding: 5px 25px;
+   border: none;
+   font-weight: 100;
+   font-size: .489em;
+}
+
+.main-illustrator {
+   height: auto;
+   width: 100%;
+   margin: auto;
+   display: block;
+ }
+
+ @media screen and (max-width: 375px){
+   header{
+      background-image: url('./images/bg-hero-mobile.svg');
+   }
+   .hero-section{
+      display: block;
+   }
+ }
