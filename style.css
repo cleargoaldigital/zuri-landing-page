@@ -35,9 +35,9 @@ header{
 nav{
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   /* width: 100%; */
-   margin-top: 20px;
+   justify-content: space-around;
+   width: 100%;
+   margin-top: 25px;
 }
 
 .logo{
@@ -54,11 +54,28 @@ nav{
    box-shadow: 0.2px .2px .2px .2px rgb(173, 172, 172);
 }
 
-.hero-section{
+.hero-section, .main-section{
    margin-top: 2em;
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+main{
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+   margin: auto;
+}
+h4{
+   font-size: .876em;
+}
+
+p{
+   font-size: .477em;
 }
 
 .left-div, .right-div{
@@ -82,7 +99,7 @@ nav{
 
 .main-illustrator {
    height: auto;
-   width: 100%;
+   width: 60%;
    margin: auto;
    display: block;
  }
@@ -91,7 +108,7 @@ nav{
    header{
       background-image: url('./images/bg-hero-mobile.svg');
    }
-   .hero-section{
+   .hero-section, .main-section{
       display: block;
    }
  }
