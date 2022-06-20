@@ -30,6 +30,7 @@ header{
    align-items: center;
    flex-direction: column;
    padding: auto 25px;
+   background-color: hsl(193, 100%, 96%);
 }
 
 nav{
@@ -51,7 +52,7 @@ nav{
    border: none;
    border-radius: 20px;
    padding: 5px 25px;
-   box-shadow: 0.2px .2px .2px .2px rgb(173, 172, 172);
+   box-shadow: 1px 1px 2px 1px lightgray;
 }
 
 .hero-section, .main-section{
@@ -70,6 +71,12 @@ main{
    width: 80%;
    margin: auto;
 }
+
+.main-section{
+   box-shadow: 1px 1px 4px 1px lightgray;
+   border-radius: 4px;
+}
+
 h4{
    font-size: .876em;
 }
@@ -111,4 +118,17 @@ p{
    .hero-section, .main-section{
       display: block;
    }
+ }
+
+ footer{
+   background-color: hsl(192, 100%, 9%);
+   color: hsl(208, 11%, 55%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* flex-wrap: wrap; */
+ }
+
+ footer .div{
+   padding-right: 7px;
  }
