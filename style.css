@@ -18,6 +18,7 @@
 
 body{
    font-family: 'Open Sans';
+   font-size: 18px;
 }
 
 header{
@@ -55,6 +56,10 @@ nav{
    box-shadow: 1px 1px 2px 1px lightgray;
 }
 
+.hero-section{
+   width: 80%;
+   margin: auto;
+}
 .hero-section, .main-section{
    margin-top: 2em;
    display: flex;
@@ -94,7 +99,7 @@ p{
 .left-div h4, .left-div p, .left-div button{
    margin-top: 10px;
 }
-.left-div button{
+.left-div button, aside button{
    background-color: hsl(322, 100%, 66%);
    color: #fff;
    border-radius: 15px;
@@ -172,4 +177,27 @@ p{
    display: flex;
    align-items: center;
    justify-content: flex-end;
+}
+
+aside{
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 60%;
+   box-shadow: 2px 2px 3px 2px lightgrey;
+   margin: 5px auto;
+   padding: 10px;
+   z-index: 1;
+   /* position: absolute; */
+}
+
+aside div{
+   width: 40%;
+   margin:auto
+}
+
+aside h4{
+   font-size: .678em
 }
