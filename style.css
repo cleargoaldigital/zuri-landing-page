@@ -126,7 +126,7 @@ p{
  }
 
  footer{
-    background-color: rgb(226, 33, 27); /* hsl(192, 100%, 9%); */
+    background-color:  hsl(191, 54%, 14%);
    color: hsl(208, 11%, 55%);
    display: flex;
    align-items: center;
@@ -135,14 +135,20 @@ p{
    margin: auto;
    margin-top: 10px;
    padding: 20px;
-   font-size: .345em;
+   font-size: .745em;
    border-radius: 4px;
    box-shadow: 1px 1px 4px 1px lightgray;
  }
 
-.container{
+.location-container{
    display: flex;
    margin-top: 20px;
+}
+
+@media screen and (max-width: 376px) {
+   .location-container{
+      display: block;
+   }
 }
 
 .address{
@@ -154,22 +160,24 @@ p{
    width: 50%;
 }
 
-.location .about{
+.about{
+   width: 15%;
+   display: flex;
+}
+
+.career{
    width: 15%;
 }
 
-.location .career{
-   width: 15%;
-}
-
-.location .social{
+.social{
    width: 20%;
 }
 
-.footer-right img{
+#footer_logo{
    height: auto;
-   width: 5%;
+   width: 50%;
    padding-right: 5px;
+   color: green;
 }
 
 .copyright{
@@ -177,6 +185,21 @@ p{
    display: flex;
    align-items: center;
    justify-content: flex-end;
+}
+
+.locate, .phone, .mail, .about{
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.locate img, .phone img, .mail img, .about img{
+   height: 10px;
+   padding-right: 5px;
+}
+
+.about{
+   display: block;
 }
 
 aside{
